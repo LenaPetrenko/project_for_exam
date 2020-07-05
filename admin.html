@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js">
+    <script src="admin.js" defer></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Административная панель</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbarcolor fixed-top border-bottom">
+          <a class="navbar-brand" href="#">
+              <img class="image-fluid logo" src="logo.png"></a>
+              <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                      <i class="fa fa-bars"></i>
+                  </span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                  <ul class="navbar-nav mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Вернуться на главную страницу<span class="sr-only">(current)</span></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="messages"></div>
+          </nav>
+      </header>
+
+      <form class="container text-center adminchoose w-75  ">
+        <div id="action_form ">
+            <div class="form-group">
+                <div class="container">
+    
+                    <div class="row">
+                      
+                      <div class="col-sm mt-3">
+                    <label for="inputAdm">Административный округ</label>
+                    <select id="sel1" class="form-control form-control">
+                        <option selected>не выбрано</option>
+                    </select>
+                    </div>
+
+                <div class="col-sm mt-3">
+                    <label for="inputDistrict">Район</label>
+                    <select id="sel2" class="form-control form-control">
+                        <option selected>не выбрано</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm mt-3">
+                    <label for="inputTypeObject">Тип заведения</label>
+                    <select id="sel3" class="form-control form-control">
+                        <option selected>Любой</option>
+                    </select>
+                </div>
+                <div class="col-sm mt-3">
+                    <label for="exampleFormControlSelect4">Соц. скидки</label>
+                    <select class="form-control" id="sel4" name="sales">
+                      <option>Не выбрано</option>
+
+                    </select>
+                  </div>
+                  <div class="col-sm-6  mt-3">
+            <button id="butN" type="button" class="btn btn-search btn-lg btn-light mt-4 mb-3 mar"
+              >Найти</button>
+        </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+
+<div class="container adminchoose "></div>
+<form id="createForm">
+  <div class="form-group "> 
+    <label for="name">Название</label>
+    <input class="form-control" type="text" name="name" value="Новое поле">
+
+  </div>
+  <div class="form-group"> 
+    <label for="typeObject">Тип</label>
+    <input class="form-control" type="text" name="typeObject" value="Новое поле">
+
+  </div>
+  <div class="form-group"> 
+    <label for="address">Адрес</label>
+    <input class="form-control" type="text" name="address" value="Новое поле">
+
+  </div>
+
+  <div class="form-group">
+    <button type="button" id="createBtn" class="btn btn-dark">Создать </button>
+  </div>
+</form>
+<button id="downloadDataBtn" class="btn btn-dark">Загрузить</button>
+    <table id="records" class="table">
+        <tbody></tbody>
+    </table>
+  </body>
+</html>
