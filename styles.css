@@ -1,0 +1,74 @@
+.logo{
+  width: 40px;
+  height: 40px;
+}
+body{
+  background-color: white;
+}
+.navbarcolor{
+  background-color: #dce4e7;
+  display: flex;
+  
+}
+a{
+  text-decoration:none;
+  color: black;
+}
+a:hover {
+  color: #b498a7; /* Цвет текста */
+}
+.photo2{
+   width: 700px;
+   height: 350px;
+}
+.carus{
+   margin-top: 80px;
+}
+.chooseRest{
+  background-color: #dce4e7;
+}
+form{
+  background-color: #e8d1dc;
+  border: 4px double black
+ 
+}
+.bord{
+   border-bottom: black;
+}
+.choosemenu{
+   background-color: white;
+}
+.adminchoose{
+   background-color: #dce4e7;
+}
+header{
+  border-bottom-width: 2px; /* Толщина линии внизу */
+  border-bottom-style: solid; /* Стиль линии внизу */
+  border-bottom-color: black; /* Цвет линии внизу */
+}
+.card{
+  background-color: #ebd7e1;
+}
+.carus{
+  margin-top: 63px;
+}
+.restr{
+  border: 4px double black;
+  background-color: #ebd7e1;
+}
+.imgmen{
+  width: 70%;
+  height: 70%;
+}
+.card{
+  background-color: #ebd7e1;
+  width: 350px;
+  height: auto;
+}
+.contact{
+  background-color: #dce4e7 ;
+}
+.adminchoose{
+  margin-top: 80px;
+
+}
