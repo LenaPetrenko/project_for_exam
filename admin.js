@@ -44,6 +44,8 @@ function renderRecords(records)
 
 function record_path(id){
 return `/api/data1/${id}`
+return  `}?api_k
+ey={67973cd7-731f-458e-8ec4-8916004f0e40}`
 }
 
 function sendRequest(url, method, onloadHandler, params) {
@@ -54,8 +56,10 @@ function sendRequest(url, method, onloadHandler, params) {
     xhr.send(params);
 }
 
-let host = 'http://exam-2020-1-api.std-400.ist.mospolytech.ru';
+let host = 'http://exam-2020-1-api.std-900.ist.mospolytech.ru';
 let records_path = '/api/data1';
+let plus_key = `}?api_k
+ey={67973cd7-731f-458e-8ec4-8916004f0e40}`
 
 window.onload = function() {
 document.getElementById('downloadDataBtn').onclick = function(){
